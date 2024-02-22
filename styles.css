@@ -1,0 +1,168 @@
+body {
+    background-image: 'C:\Users\kishl\OneDrive\Desktop\CS102\LAB 7\background'; 
+}
+
+#about-me {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+    border: 2pt solid black; 
+    border-radius: 15px;
+    background-color: rgb(160, 241, 106); 
+}
+.title, .Education, .Courses, .Curriculars  {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 40px; 
+}
+
+.year{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.content {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+#profile-pic {
+    width: 172pt; 
+    height: 172pt; 
+    object-fit: cover; 
+    margin-left: 20px; 
+    border-radius: 10px;
+}
+
+.name, .description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    order: 1; 
+    margin: 20px;
+}
+
+.name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; 
+    font-size: 35px; 
+    color: rgb(68, 153, 19);
+}
+
+.description {
+    font-size: 25px;
+    color: #000; 
+}
+
+#education table {
+    font-size: 30px;
+    border: 1pt solid;
+    border-spacing: 2;
+    border-radius: 18px;
+    background-color: lightBlue;
+    padding: 10pt;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+#education th {
+    text-decoration: underline;
+    font-family: monospace;
+}
+
+#education td, #education th {
+    padding: 10pt;
+    font-family: monospace;
+    text-align: left;
+}
+
+
+#education td:nth-child(2) {
+    text-align: center;
+    font-family: monospace;
+}
+
+.Semester1, .Semester2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.Semester1{
+    color: #cc0000;
+}
+
+.Semester2{
+    color: rgb(25, 82, 20);
+}
+
+.semester {
+    font-size: 25px;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    border: 2pt solid;
+    padding: 10px;
+    align-items: flex-end;
+}
+
+#autumn-semester {
+    background-color: rgb(235, 158, 169);
+    border-color: black;
+    border-radius: 8px;
+    align-items: flex-end;
+}
+
+#spring-semester {
+    background-color: rgb(68, 168, 68);
+    border-color: black;
+    border-radius: 8px;
+    align-items: flex-end;
+}
+
+.course-list li b {
+    font-weight: bold;
+}
+
+.course-list li i {
+    font-style: italic;
+}
+
+
+#autumn-semester ol {
+    list-style-type: lower-roman;
+}
+
+#extra-curriculars {
+    background-color: #f7f7c7; 
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#extra-curriculars p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #303;
+}
+
+#extra-curriculars h1 {
+    color: #cc7a00; 
+}
+
+#extra-curriculars .self-help {
+    font-weight: bold;
+    color: #cc0000; 
+}
+
+#extra-curriculars .final{
+    font-family: 'Arial', sans-serif; 
+    font-size: 25px;
+}
+
+.semester::after {
+    content: "";
+    display: table;
+    clear: both;
+}
